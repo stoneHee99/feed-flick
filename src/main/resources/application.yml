@@ -1,0 +1,14 @@
+server:
+  shutdown: graceful
+
+spring:
+  profiles:
+    include: oauth
+  jpa:
+    hibernate:
+      ddl-auto: create
+  datasource:
+    url: jdbc:mysql://localhost:3306/feedflick
+    username: root
+    password: 1234
+    driver-class-name: com.mysql.cj.jdbc.Driver

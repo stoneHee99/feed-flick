@@ -1,0 +1,10 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            redirect-uri: https://github.com/login/oauth/access_token
+        provider:
+          github:
+            authorization-uri: https://github.com/login/oauth/authorize
